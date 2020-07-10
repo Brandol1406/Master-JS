@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso jQuery</title>
+        <script type="text/javascript" src="JS/jQuery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="JS/jQuery UI/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="JS/Tooltips, Dialogs, Calendar and Tabs.js"></script>
+
+        <link href="JS/jQuery UI/jquery-ui.min.css" type="text/css" rel="stylesheet"/>
+
+        <style>
+            .elemento{
+                width: 300px;
+                height: 200px;
+                border: 4px solid black;
+                background: lightblue;
+                margin: 20px;
+            }
+            .hidden{
+                display: none;
+            }
+            h1 {
+                color: blue;
+            }
+            .separator {
+                margin-top: 20px;
+                border-top: solid 1px blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Aprendiendo jQuery UI</h1>
+
+        <h2 title="Los tooltips sirven para dar informacion afdicional en las paginas web">Uso de tooltips</h2>
+
+        <a href="https://www.google.com" title="Visitar google">Google</a>
+        <br/>
+        <br/>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" title="Completar con tu nombre" placeholder="Nombre"/>
+        <hr class="separator"/>
+        <!-- Uso de dialogs -->
+        <h2 title="Cajas de dialogo">Uso de dialogs</h2>
+        <br/>
+        <div id="dialogo">
+            <h4>Hola! soy una caja de dialogo ☺</h4>
+        </div>
+        <button id="showDialog">Mostrar caja de dialogo</button>
+        <!-- Uso de calendarios -->
+        <hr class="separator"/>
+        <h2 title="Calendarios para los inputs que esparn una fecha">Uso de datepicker</h2>
+        <br/>
+        <input type="text" id="fecha" />
+        <!-- Uso de tabs -->
+        <hr class="separator"/>
+        <h2 title="Los tabs son utiles para vistas con muchos elementos">Uso de tabs</h2>
+        <br/>
+        <div id="tab">
+            <ul>
+                <li><a href="#tab-1">Tab 1</a></li>
+                <li><a href="#tab-2">Tab 2</a></li>
+                <li><a href="#tab-3">Tab 3</a></li>
+            </ul>
+            <div id="tab-1">
+                <h4>Hola estas dentro del tab #1</h4>
+                <p>Como estas epero que bien!</p>
+            </div>
+            <div id="tab-2">
+                <h4>Ahora estas dentro del tab #2</h4>
+                <p>To estoy bien y tu!</p>
+            </div>
+            <div id="tab-3">
+                <h4>Contenido del tab #3</h4>
+                <p>☺ ☺ ☺ ☺</p>
+            </div>
+        </div>
+    </body>
+</html>

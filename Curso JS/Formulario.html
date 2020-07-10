@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ejercicio DOM, Eventos y funciones</title>
+        <style>
+            input {
+                display: block;
+                margin: 10px;
+                padding:4px;
+            }
+            .container {
+                display: flex;
+            }
+            #muestra {
+                margin: left:80px;
+                width: 150px;
+                height: 200px;
+                border: dotted 2px black; 
+                display: none;
+            }
+        </style>
+        <script type="text/javascript" src="JS/Ejercicio_DOM.js"></script>
+    </head>
+    <body>
+        <h1>Ejercicio DOM, Eventos y Funciones - Curso JS Carlos Lora</h1>
+        <div class="container">
+            <div  class="box">
+                <form action="#" method="post" onsubmit="return false;" id="myForm">
+                    <input type="text" id="nombre" name="nombre" title="Escribir nombre" placeholder="Nombre"/>
+                    <input type="text" id="apellido" name="apellido" title="Escribir apellido" placeholder="Apellido"/>
+                    <input type="number" id="edad" name="edad" title="Escribir edad" placeholder="Edad"/>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="box" id="muestra">
+                <h3 style="text-align:center;">Datos</h3>
+                <hr>
+                <p id="p_nombre">Nombre: <span></span></p>
+                <p id="p_apellido">Apellido: <span></span></p>
+                <p id="p_edad">Edad: <span></span></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso jQuery</title>
+        <script type="text/javascript" src="JS/jQuery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="JS/Efectos.js"></script>  
+        <style>
+            .box{
+                background: #ccc;
+                height: 200px;
+                width: 400px;
+                border: dashed 5px black;
+                margin-top:16px;
+                padding: 16px;
+                font-size: 20px;
+                font-family:verdana;
+            }
+        </style>     
+    </head>
+    <body>
+        <h1>Aprendiendo jQuery</h1>
+        <p>Ejercicios de jQuery - Efectos y animaciones</p>
+        <label>Efecto:</label>
+        <select id="efecto">
+            <option value="1">Hide/Show</option>
+            <option value="2">fadeIn/fadeOut</option>
+            <option value="3">slideUp/slideDown</option>
+        </select>
+        <label>Velocidad:</label>
+        <select id="velocidad">
+            <option value="slow">Slow</option>
+            <option value="medium">Medium</option>
+            <option value="fast">Fast</option>
+        </select>
+        <br/>
+        <br/>
+        <button id="mostrar">Mostrar</button>
+        <button id="ocultar">Ocultar</button>
+        <div id="box" class="box"> 
+            <h4>Hola! soy una caja.</h4>
+        </div>
+    </body>
+</html>

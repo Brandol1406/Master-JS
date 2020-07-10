@@ -1,0 +1,8 @@
+:root{
+	--main-color: #235E3D;
+	--main-gray: #333;
+}
+body{
+	background: url("../img/hojas.jpg");
+	background-attachment: fixed;
+}

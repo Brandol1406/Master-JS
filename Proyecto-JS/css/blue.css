@@ -1,0 +1,8 @@
+:root{
+	--main-color: #1f87c4;
+	--main-gray: #333;
+}
+body{
+	background: url("../img/cielo.jpg");
+	background-attachment: fixed;
+}

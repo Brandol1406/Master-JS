@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso jQuery</title>
+        <script type="text/javascript" src="JS/jQuery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="JS/jQuery UI/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="JS/Animaciones.js"></script>
+
+        <link href="JS/jQuery UI/jquery-ui.min.css" type="text/css" rel="stylesheet"/>
+
+        <style>
+            .elemento{
+                width: 300px;
+                height: 200px;
+                border: 4px solid black;
+                background: lightblue;
+                margin: 20px;
+            }
+            .hidden{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Aprendiendo jQuery UI</h1>
+
+        <select id="efecto">
+            <option value="explode">Explode</option>
+            <option value="fade">Fade</option>
+            <option value="blinc">Blinc</option>
+            <option value="slide">Slide</option>
+            <option value="drop">Drop</option>
+            <option value="fold">Fold</option>
+            <option value="puff">Puff</option>
+            <option value="scale">Scale</option>
+            <option value="shake">Shake</option>
+        </select>
+        <button id="boton">Accion</button>
+
+        <div class="elemento hidden">
+            Hola, soy un elemento
+        </div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso jQuery</title>
+        <script type="text/javascript" src="JS/jQuery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="JS/jQuery UI/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="JS/Interface.js"></script>
+
+        <link href="JS/jQuery UI/jquery-ui.min.css" type="text/css" rel="stylesheet"/>
+
+        <style>
+            .elemento{
+                width: 300px;
+                height: 200px;
+                border: 4px solid black;
+                background: lightblue;
+                margin: 20px;
+                float: left;
+            }
+            .lista-seleccionable li{
+                width: 20%;
+                padding: 20px;
+                border: 1px solid#ccc;
+                list-style: none;
+                cursor: pointer;
+                transition: 200ms all;
+            }
+            .lista-seleccionable .ui-selecting {
+                background: lightblue;
+            }
+            .lista-seleccionable .ui-selected {
+                background: blue;
+            }
+            #elemento-movido {
+                width: 100px;
+                height: 100px;
+                border: solid 4px red;
+            }
+            #area {
+                width:400px;
+                height: 400px;
+                border: solid 4px green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Aprendiendo jQuery UI</h1>
+        <input type="text" id="calendar"/>
+
+        <div id="elemento-movido"></div>
+        <div id="area"></div>
+
+        <ul class="lista-seleccionable">
+            <li>GTA V</li>
+            <li>God Of War</li>
+            <li>The Last Of Us</li>
+            <li>Horizon Zero Dawn</li>
+            <li>Battlefield V</li>
+            <li>Red Dead Redemption II</li>
+        </ul>
+
+        <div class="elemento">
+            Hola, soy un elemento de la web 1
+        </div>
+        <div class="elemento">
+            Hola, soy un elemento de la web 2
+        </div>
+        <div class="elemento">
+            Hola, soy un elemento de la web 3
+        </div>
+    </body>
+</html>
