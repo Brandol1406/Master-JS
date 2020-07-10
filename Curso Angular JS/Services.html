@@ -1,0 +1,50 @@
+﻿<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Prácticas Angular - Servicios</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="JS/Services/myServices.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: solid 1px lightcyan;
+        }
+        td, th {
+            padding: 4px;
+        }
+    </style>
+    </head>
+    <body>
+        Viewing url
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <h1>Viewing URL</h1>
+        <p>The url of this page is:</p>
+        <h3>{{myUrl}}</h3>
+        <h1>Using $http.get()</h1>
+        <h1>{{myWelcome}}</h1>
+        <h1>Using $http.get() for bringing data</h1>
+        <table id="searchObjResults">
+            <thead>
+            <tr>
+                <th><input type="text" placeholder="Search..." ng-model="search.firstName" /></th>
+                <th><input type="text" placeholder="Search..." ng-model="search.lastName" /></th>
+                <th><input type="text" placeholder="Search..." ng-model="search.age" /></th>
+            </tr>
+            <tr>
+                <th ng-click="orderByMe('firstName')">First Name</th>
+                <th ng-click="orderByMe('lastName')">Last Name</th>
+                <th ng-click="orderByMe('age')">Age</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="p in persons | orderBy: myOrderBy | filter:search:false">
+                <td>{{p.firstName}}</td>
+                <td>{{p.lastName}}</td>
+                <td>{{p.age}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Prácticas Angular</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script type="text/javascript" src="JS/Controllers/myController.js"></script>
+    <head>
+    </head>
+    <body>
+        <div ng-app="myApp" ng-controller="myController">
+            <label>First name</label>
+            <input type="text" ng-model="firstName" />
+            <br />
+            <label>Last name</label>
+            <input type="text" ng-model="lastName" />
+            <br />
+            <h4>Full name: <span>{{firstName + " " + lastName}}</span></h4>
+            <button type="button" ng-click="methods.addName()">Add Name</button>
+            <button type="button" ng-click="methods.alertFullName()">Alert full name</button>
+            <br />
+            <input type="text" ng-model="filteringInput" />
+            <ul>
+                <li ng-repeat="n in names | filter: filteringInput">{{n}}</li>
+            </ul>
+            <br />
+            <select ng-model="myCol">
+                <option ng-repeat="c in colors" value="{{c}}">{{c}}</option>
+            </select>
+            <div style="width:200px;height:400px;background-color:{{myCol}};"></div>
+        </div>
+    </body>
+</html>

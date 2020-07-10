@@ -1,0 +1,72 @@
+[
+  {
+    "name": "John",
+    "surName": "Muller",
+    "phone": "555-1276",
+    "age": 25,
+    "salary": 1800
+  },
+  {
+    "name": "Mary",
+    "surName": "Patterson",
+    "phone": "800-BIG-MARY",
+    "age": 20,
+    "salary": 1000
+  },
+  {
+    "name": "Mike",
+    "surName": "Skinner",
+    "phone": "555-4321",
+    "age": 28,
+    "salary": 2000
+  },
+  {
+    "name": "Adam",
+    "surName": "Cattleman",
+    "phone": "555-5678",
+    "age": 19,
+    "salary": 900
+  },
+  {
+    "name": "Julie",
+    "surName": "Schneider",
+    "phone": "555-8765",
+    "age": 29,
+    "salary": 2500
+  },
+  {
+    "name": "Juliette",
+    "surName": "Deloitte",
+    "phone": "555-5678",
+    "age": 29,
+    "salary": 3000
+  },
+  {
+    "name": "Hitachi",
+    "surName": "Uchija",
+    "phone": "555-5555",
+    "age": 25,
+    "salary": 3000
+  },
+  {
+    "name": "Sazuke",
+    "surName": "Uchija",
+    "phone": "555-5555",
+    "age": 18,
+    "salary": 1800
+  },
+  {
+    "name": "Raul",
+    "surName": "Castro",
+    "phone": "557-1617",
+    "age": 25,
+    "salary": 1800
+  },
+  {
+    "name": "Catherine",
+    "surName": "Kidman",
+    "phone": "686-9088",
+    "age": 26,
+    "salary": 1700
+  }
+]

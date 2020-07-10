@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Prácticas Angular - Filtros</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="JS/Controllers/FiltersCtrl.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: solid 1px lightcyan;
+        }
+        td, th {
+            padding: 4px;
+        }
+        table thead th span {
+            cursor:pointer;
+        }
+        table tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="FiltersCtrl">
+        <label>Any: <input ng-model="search.$"></label> <br>
+        <label>Equality <input type="checkbox" ng-model="strict"></label><br>
+        <table id="searchObjResults">
+            <thead>
+                <tr>
+                    <th><input ng-model="search.name"></th>
+                    <th><input ng-model="search.surName"></th>
+                    <th><input ng-model="search.phone"></th>
+                    <th><input ng-model="search.age"></th>
+                    <th><input ng-model="search.salary"></th>
+                </tr>
+            <tr>
+                <th><span ng-click="orderByMe('name')">Name</span></th>
+                <th><span ng-click="orderByMe('surName')">Sur Name</span></th>
+                <th><span ng-click="orderByMe('phone')">Phone</span></th>
+                <th><span ng-click="orderByMe('age')">Age</span></th>
+                <th><span ng-click="orderByMe('salary')">Salary</span></th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="friendObj in friends | orderBy: myOrderBy | filter:search:strict">
+                    <td>{{friendObj.name | uppercase}}</td>
+                    <td>{{friendObj.surName | uppercase}}</td>
+                    <td>{{friendObj.phone}}</td>
+                    <td>{{friendObj.age}}</td>
+                    <td>{{friendObj.salary | currency }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
